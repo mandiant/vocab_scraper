@@ -62,5 +62,6 @@ according to character encoding to run them in separate runs of this tool
 (with different character encodings assumed), then merge and sort the text
 numerically (and once again coalesce duplicates and near-duplicates).
 
-The book "Fluent Python" has a whole chapter that treats Python character
-encoding topics in great detail if you are looking for a reference.
+The book "Fluent Python" (Luciano Ramalho, O'Reilly, 2015) has a whole chapter
+that treats Python character encoding topics in great detail if you are looking
+for a reference.
