@@ -30,7 +30,7 @@ The default input encoding is `cp1251` and the default output encoding is
 `utf-8`. Any character encoding name recognized by the Python standard
 libraries should work.
 
-## Limitations relating to Different Languages
+## Limitations relating to Linguistic Concerns
 Vocabulary Scraper is best for languages like Russian where words are
 conveniently delimited by spaces. In languages where spaces are not mandated
 between words (like Chinese and Japanese), Vocabulary Scraper might still
@@ -38,16 +38,16 @@ extract all the foreign language text, however it will not be able to break the
 symbol sequences out into individual vocabulary words to study if there are no
 spaces.
 
-## Limitations relating to Character Encoding
 Vocabulary Scraper does not aggregate or coalesce entries with common word
 roots due to plural, different verb conjugations, etc. In a sufficiently large
 corpus, it may help to groom the list manually to coalesce like terms.
 
-The script also currently does not coalesce words having alternate encodings of
-the same character(s), meaning it could produce a list containing one or more
-sets of words are visually identical but are counted as distinct based on their
-differing Unicode code points. This has not yet been observed in operation, but
-if you observe this, this might explain the cause.
+## Limitations relating to Character Encoding
+Vocabulary Scraper currently does not coalesce words having alternate encodings
+of the same character(s), meaning it could produce a list containing one or
+more sets of words are visually identical but are counted as distinct based on
+their differing Unicode code points. This has not yet been observed in
+operation, but if you observe this, this might explain the cause.
 
 As of this writing, Vocabulary Scraper is ignorant of the real encoding of its
 input files (use the command line argument --ienc to specify the encoding,
