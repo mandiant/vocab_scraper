@@ -2,8 +2,9 @@
 
 Vocabulary Scraper is meant to aid analysis of foreign-language codebases. It
 reads source files (`*.{c,h,cpp,hpp,txt}`) and writes a prioritized vocabularly
-list in UTF-8. It was written and used by FLARE to analyze the Carbanak source
-code, and accordingly, the default setting is to read files in code page 1251
+list in UTF-8. It was written and used by FLARE to [analyze the Carbanak source
+code](https://www.fireeye.com/blog/threat-research/2019/04/carbanak-week-part-one-a-rare-occurrence),
+and accordingly, the default setting is to read files in code page 1251
 (Cyrillic).
 
 ## Usage
@@ -26,7 +27,8 @@ optional arguments:
 ```
 
 The default input encoding is `cp1251` and the default output encoding is
-`utf-8`.
+`utf-8`. Any character encoding name recognized by the Python standard
+libraries should work.
 
 ## Limitations relating to Different Languages
 Vocabulary Scraper is best for languages like Russian where words are
