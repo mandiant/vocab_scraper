@@ -6,6 +6,28 @@ list in UTF-8. It was written and used by FLARE to analyze the Carbanak source
 code, and accordingly, the default setting is to read files in code page 1251
 (Cyrillic).
 
+## Usage
+
+Vocabulary Scraper accepts the following arguments:
+
+```
+usage: vocab.py [-h] [--startdir STARTDIR] [--ienc IENC] [--oenc OENC] outfile
+
+Vocabulary scraper
+
+positional arguments:
+  outfile              Output file
+
+optional arguments:
+  -h, --help           show this help message and exit
+  --startdir STARTDIR  Directory to recurse
+  --ienc IENC          Input encoding
+  --oenc OENC          Output encoding
+```
+
+The default input encoding is `cp1251` and the default output encoding is
+`utf-8`.
+
 ## Limitations relating to Different Languages
 Vocabulary Scraper is best for languages like Russian where words are
 conveniently delimited by spaces. In languages where spaces are not mandated
